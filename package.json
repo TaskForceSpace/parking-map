@@ -1,0 +1,30 @@
+{
+  "name": "parking-map",
+  "version": "0.1.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/parking-map.js",
+    "./style.css": "./dist/parking-map.css"
+  },
+  "scripts": {
+    "dev": "vite --config playground/vite.config.js",
+    "build": "vite build",
+    "build:playground": "npm run build && vite build --config playground/vite.config.js",
+    "preview": "vite preview --config playground/vite.config.js",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "6.0.1",
+    "vite": "7.3.6",
+    "vue": "3.5.21"
+  },
+  "dependencies": {
+    "leaflet": "1.9.4"
+  }
+}
